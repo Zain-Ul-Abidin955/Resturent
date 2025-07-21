@@ -1,2 +1,6 @@
 export {default as GirlEating} from "./girl.png"
 export {default as Logo} from "./logo.png"
+export {default as Burger} from "./burger.png"
+export {default as Pizza} from "./pizza.png"
+export {default as Ice_cream} from "./ice_cream.png"
+export {default as Juice} from "./juice.png"

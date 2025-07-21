@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { Badge, Box, Typography } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
@@ -8,20 +8,20 @@ import { Logo } from '../../../assets';
 
 const Navbar = () => {
     return (
-        <Box  display={"flex"} height={"140px"}  sx={{fontFamily:"Poppins,sans-serif"}}  >
+        <Box display={"flex"} height={"140px"} sx={{ fontFamily: "Poppins,sans-serif" }}  >
 
             <Box display={"flex"} my={"auto"} width={"15%"}>
-              
 
-               <Box
-                                  component="img"
-                                  src={Logo}
-                                  alt="Logo"
-                                  sx={{
-                                      width: "90px",
-                                      height: '35px',
-                                  }}/>
-              
+
+                <Box
+                    component="img"
+                    src={Logo}
+                    alt="Logo"
+                    sx={{
+                        width: "90px",
+                        height: '35px',
+                    }} />
+
             </Box>
 
 
@@ -47,9 +47,18 @@ const Navbar = () => {
 
 
 
-            <Box display={"flex"} gap={2.5} justifyContent={"end"} mr={6} width={"45%"} my={"auto"}>
+            <Box display={"flex"} gap={3} justifyContent={"end"} mr={6} width={"45%"} my={"auto"}>
                 <Box mt={1.8} ><SearchIcon fontSize='large' /></Box>
-                <Box mt={1.7}><ShoppingBagOutlinedIcon  fontSize='large' /></Box>
+                <Box mt={1.7} >
+                    <Badge badgeContent={8} sx={{ '& .MuiBadge-badge':{
+                        backgroundColor:"#39DB4A",
+                        color:"white"
+                    }}}>
+
+                        <ShoppingBagOutlinedIcon fontSize='large' />
+
+                    </Badge>
+                </Box>
                 <Box display={"flex"} sx={{ width: "179px", height: "60px", borderRadius: "40px", background: "#39DB4A" }}>
                     <Box m={2} color={"#FFFFFF"}><PhoneInTalkOutlinedIcon /></Box>
                     <Box mt={1.7} fontWeight={"500px"} fontSize={"20px"} color={"#FFFFFF"}>Contact</Box>

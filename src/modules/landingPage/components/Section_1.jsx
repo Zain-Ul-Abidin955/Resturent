@@ -4,7 +4,7 @@ import PlayCircleRoundedIcon from '@mui/icons-material/PlayCircleRounded';
 import { GirlEating } from '../../../assets';
 const Section_1 = () => {
     return (
-        <Box  display={"flex"}>
+        <Box  display={"flex"} my={2} border={"2px solid red"}>
             <Box  width={"50%"} my={"auto"}>
                 <Box sx={{ fontWeight: "800", fontSize: "62px", color: "#000000", lineHeight: "146%" }}>Dive into Delights <br/>Of Delectable <span style={{ color: "#39DB4A" }}>Food</span></Box>
                 <Box sx={{ fontWeight: "500", fontSize: "26px", color: "#4A4A4A", lineHeight: "171%", marginTop: "25px" }}>
