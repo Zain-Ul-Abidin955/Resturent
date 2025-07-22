@@ -4,7 +4,7 @@ import { Burger, Ice_cream, Juice, Pizza } from '../../../assets'
 
 const CardSection = () => {
   return (
-    <Box border={"2px solid red"} my={6}>
+    <Box my={6}>
       <Box my={2} sx={{ textTransform: "uppercase", fontWeight: "700", fontSize: "20px", lineHeight: "100%", letterSpacing: "5px", color: "#FF6868", textAlign: "center" }}
       >Customer Favorites</Box>
       <Box my={2} sx={{ fontWeight: "700", fontSize: "60px", lineHeight: "100%", color: "#000000", textAlign: "center" }}
@@ -12,7 +12,7 @@ const CardSection = () => {
       <Box>
 
 
-        <Box border={"2px solid yellow"} sx={{
+        <Box  sx={{
           display:"flex",
           justifyContent:"space-between",
           mt:4
