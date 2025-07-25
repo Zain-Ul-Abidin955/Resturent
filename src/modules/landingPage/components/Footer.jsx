@@ -11,13 +11,28 @@ const Footer = () => {
         <>
             <Box sx={{
                 display: 'flex',
+                flexDirection: {
+                    xs: "column",
+                    md: "row",
+                },
+                gap: "20px",
+                alignItems: {
+                    xs: "center",
+                    md: "normal",
+                },
                 justifyContent: "space-between",
-                height: "80vh",
-                // border: "2px solid red"
+                my:"30px",
             }}>
 
                 <Box sx={{
-                    width: "25%",
+                    width: {
+                        xs: "100%",
+                        md: "25%",
+                    },
+                    alignItems: {
+                        xs: "center",
+                        md: "normal",
+                    },
                     display: "flex",
                     flexDirection: "column",
                     gap: "40px"
@@ -42,7 +57,14 @@ const Footer = () => {
                 </Box>
 
                 <Box sx={{
-                    width: "25%",
+                      width: {
+                        xs: "100%",
+                        md: "25%",
+                    },
+                    alignItems: {
+                        xs: "center",
+                        md: "normal",
+                    },
                     display: "flex",
                     flexDirection: "column",
                     gap: "40px"
@@ -81,7 +103,14 @@ const Footer = () => {
                 </Box>
 
                 <Box sx={{
-                    width: "25%",
+                      width: {
+                        xs: "100%",
+                        md: "25%",
+                    },
+                    alignItems: {
+                        xs: "center",
+                        md: "normal",
+                    },
                     display: "flex",
                     flexDirection: "column",
                     gap: "40px"
@@ -120,7 +149,14 @@ const Footer = () => {
                 </Box>
 
                 <Box sx={{
-                    width: "25%",
+                      width: {
+                        xs: "100%",
+                        md: "25%",
+                    },
+                    alignItems: {
+                        xs: "center",
+                        md: "normal",
+                    },
                     display: "flex",
                     flexDirection: "column",
                     gap: "40px"
@@ -158,37 +194,42 @@ const Footer = () => {
 
             <Box sx={{
                 display: "flex",
+                flexDirection: {
+                    xs: "column",
+                    md: "row",
+                },
+                my: "10px",
 
             }}>
                 <Box sx={{
-                    width: "25%",
                     display: "flex",
-                    gap: "16px"
+                    gap: "16px",
+                    mr: "45px",
                 }}>
 
-                  <Box sx={{
+                    <Box sx={{
                         width: "57px",
                         height: "58px",
                         backgroundColor: "#39DB4A",
                         borderRadius: "100%",
-                        display:"flex",
-                        justifyContent:'center',
-                        alignItems:"center",
+                        display: "flex",
+                        justifyContent: 'center',
+                        alignItems: "center",
 
                     }}>
                         <FacebookOutlinedIcon sx={{
                             color: "#FFFFFF",
                         }} />
                     </Box>
-                  
+
                     <Box sx={{
                         width: "57px",
                         height: "58px",
                         backgroundColor: "#e7e7e7ff",
                         borderRadius: "100%",
-                        display:"flex",
-                        justifyContent:'center',
-                        alignItems:"center",
+                        display: "flex",
+                        justifyContent: 'center',
+                        alignItems: "center",
 
                     }}>
                         <InstagramIcon sx={{
@@ -196,14 +237,14 @@ const Footer = () => {
                         }} />
                     </Box>
 
-                         <Box sx={{
+                    <Box sx={{
                         width: "57px",
                         height: "58px",
                         backgroundColor: "#e7e7e7ff",
                         borderRadius: "100%",
-                        display:"flex",
-                        justifyContent:'center',
-                        alignItems:"center",
+                        display: "flex",
+                        justifyContent: 'center',
+                        alignItems: "center",
 
                     }}>
                         <TwitterIcon sx={{
@@ -211,14 +252,14 @@ const Footer = () => {
                         }} />
                     </Box>
 
-                         <Box sx={{
+                    <Box sx={{
                         width: "57px",
                         height: "58px",
                         backgroundColor: "#e7e7e7ff",
                         borderRadius: "100%",
-                        display:"flex",
-                        justifyContent:'center',
-                        alignItems:"center",
+                        display: "flex",
+                        justifyContent: 'center',
+                        alignItems: "center",
 
                     }}>
                         <YouTubeIcon sx={{
@@ -226,7 +267,7 @@ const Footer = () => {
                         }} />
                     </Box>
 
-                    
+
                 </Box>
 
                 <Box sx={{
@@ -234,7 +275,7 @@ const Footer = () => {
                     fontSize: "22px",
                     lineHeight: "100%",
                     color: "#555555",
-                    mt:"16px"
+                    mt: "16px"
                 }}>Copyright 2023 Dscode | All rights reserved</Box>
             </Box>
         </>

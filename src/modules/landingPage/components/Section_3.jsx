@@ -5,23 +5,30 @@ import { Boal, Gift, Shopping, Time } from '../../../assets'
 const Section_3 = () => {
     return (
         <Box sx={{
-            // border: "2px solid red",
-            height: "110vh",
             display: "flex",
+            flexDirection: {
+                xs: "column",
+                md: "row",
+            },
             gap: "20px",
-            my: "15px",
+            my: "30px",
         }}>
 
 
             <Box sx={{
-                width: "50%",
+                width: {
+                    xs: "100%",
+                    md: "50%",
+                },
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-evenly",
+                gap: "20px",
+
             }}>
                 <Box sx={{
                     fontWeight: "700",
-                    fontSize: "20px",
+                    fontSize: { xs: "12px", md: "20px" },
                     lineHeight: "100%",
                     letterSpacing: "3px",
                     textTransform: "uppercase",
@@ -31,14 +38,15 @@ const Section_3 = () => {
 
                 <Box sx={{
                     fontWeight: "700",
-                    fontSize: "60px",
+                    fontSize: { xs: "30px", md: "60px" },
+
                     lineHeight: "131%",
                     color: "#000000",
                 }}>Our Culinary Journey And Services</Box>
 
                 <Box sx={{
                     fontWeight: "500",
-                    fontSize: "26px",
+                    fontSize: { xs: "15px", md: "26px" },
                     lineHeight: "159%",
                     color: "#555555",
                 }}>Rooted in passion, we curate unforgettable dining experiences and offer exceptional services, blending culinary artistry with warm hospitality.</Box>
@@ -46,11 +54,11 @@ const Section_3 = () => {
                 <Button sx={{
 
                     borderRadius: "40px",
-                    width: "200px",
-                    height: "80px",
+                    width: { xs: "100px", md: "200px", },
+                    height: { xs: "40px", md: "80px", },
                     textTransform: "capitalize",
                     fontWeight: "600",
-                    fontSize: "26px",
+                    fontSize: { xs: "13px", md: "26px", },
                     color: "#FFFFFF",
                     lineHeight: "100%",
                     backgroundColor: "#39DB4A"
@@ -59,16 +67,23 @@ const Section_3 = () => {
             </Box>
 
             <Box sx={{
-                width: "50%",
-                display:'flex',
-                flexWrap:"wrap",
-                gap:"40px"
+                width: {
+                    xs: "100%",
+                    md: "50%",
+                },
+                display: 'flex',
+                justifyContent: "center",
+                alignItems: "center",
+                flexWrap: "wrap",
+                gap: "40px"
             }}>
 
                 <Box
                     sx={{
                         width: '277px',
                         height: "297px",
+                        width: { xs: "200px", md: "277px", },
+                        height: { xs: "220px", md: "297px", },
                         borderRadius: "40px",
                         bgcolor: "#FFFFFF",
                         textAlign: 'center',
@@ -83,13 +98,13 @@ const Section_3 = () => {
                         src={Boal}
                         alt="Logo"
                         sx={{
-                            width: "64px",
-                            height: '64px',
+                            width: { xs: "45px", md: "64px", },
+                            height: { xs: "45px", md: "64px", },
                         }} />
 
                     <Box my={2} sx={{
                         fontWeight: "700",
-                        fontSize: "24px",
+                        fontSize: { xs: "14px", md: "24px", },
                         lineHeight: "100%",
                         textTransform: "uppercase",
                         color: "#5FE26C"
@@ -97,18 +112,18 @@ const Section_3 = () => {
 
                     <Box my={2} sx={{
                         fontWeight: "600",
-                        fontSize: "20px",
+                        fontSize: { xs: "12px", md: "20px", },
                         lineHeight: "100%",
                         color: "#90BD95",
-                        width:"80%",
+                        width: "80%",
                     }}>Delight your guests with our flavors and presentation</Box>
 
                 </Box>
 
-                 <Box
+                <Box
                     sx={{
-                        width: '277px',
-                        height: "297px",
+                        width: { xs: "200px", md: "277px", },
+                        height: { xs: "220px", md: "297px", },
                         borderRadius: "40px",
                         bgcolor: "#FFFFFF",
                         textAlign: 'center',
@@ -123,13 +138,14 @@ const Section_3 = () => {
                         src={Time}
                         alt="Logo"
                         sx={{
-                            width: "64px",
-                            height: '64px',
+                            width: { xs: "45px", md: "64px", },
+                            height: { xs: "45px", md: "64px", },
                         }} />
 
                     <Box my={2} sx={{
                         fontWeight: "700",
-                        fontSize: "24px",
+                        fontSize: { xs: "14px", md: "24px", },
+
                         lineHeight: "100%",
                         textTransform: "uppercase",
                         color: "#5FE26C"
@@ -137,19 +153,19 @@ const Section_3 = () => {
 
                     <Box my={2} sx={{
                         fontWeight: "600",
-                        fontSize: "20px",
+                        fontSize: { xs: "12px", md: "20px", },
                         lineHeight: "100%",
                         color: "#90BD95",
-                        width:"80%",
+                        width: "80%",
                     }}>We deliver your order promptly to your door</Box>
 
                 </Box>
 
 
-                 <Box
+                <Box
                     sx={{
-                        width: '277px',
-                        height: "297px",
+                        width: { xs: "200px", md: "277px", },
+                        height: { xs: "220px", md: "297px", },
                         borderRadius: "40px",
                         bgcolor: "#FFFFFF",
                         textAlign: 'center',
@@ -164,13 +180,13 @@ const Section_3 = () => {
                         src={Shopping}
                         alt="Logo"
                         sx={{
-                            width: "64px",
-                            height: '64px',
+                            width: { xs: "45px", md: "64px", },
+                            height: { xs: "45px", md: "64px", },
                         }} />
 
                     <Box my={2} sx={{
                         fontWeight: "700",
-                        fontSize: "24px",
+                        fontSize: { xs: "14px", md: "24px", },
                         lineHeight: "100%",
                         textTransform: "uppercase",
                         color: "#5FE26C"
@@ -178,10 +194,10 @@ const Section_3 = () => {
 
                     <Box my={2} sx={{
                         fontWeight: "600",
-                        fontSize: "20px",
+                        fontSize: { xs: "12px", md: "20px", },
                         lineHeight: "100%",
                         color: "#90BD95",
-                        width:"80%",
+                        width: "80%",
                     }}>Explore menu & order with ease using our Online Ordering</Box>
 
                 </Box>
@@ -189,8 +205,8 @@ const Section_3 = () => {
 
                 <Box
                     sx={{
-                        width: '277px',
-                        height: "297px",
+                        width: { xs: "200px", md: "277px", },
+                        height: { xs: "220px", md: "297px", },
                         borderRadius: "40px",
                         bgcolor: "#FFFFFF",
                         textAlign: 'center',
@@ -205,13 +221,13 @@ const Section_3 = () => {
                         src={Gift}
                         alt="Logo"
                         sx={{
-                            width: "64px",
-                            height: '64px',
+                            width: { xs: "45px", md: "64px", },
+                            height: { xs: "45px", md: "64px", },
                         }} />
 
                     <Box my={2} sx={{
                         fontWeight: "700",
-                        fontSize: "24px",
+                        fontSize: { xs: "14px", md: "24px", },
                         lineHeight: "100%",
                         textTransform: "uppercase",
                         color: "#5FE26C"
@@ -219,10 +235,10 @@ const Section_3 = () => {
 
                     <Box my={2} sx={{
                         fontWeight: "600",
-                        fontSize: "20px",
+                        fontSize: { xs: "12px", md: "20px", },
                         lineHeight: "100%",
                         color: "#90BD95",
-                        width:"80%",
+                        width: "80%",
                     }}>Give the gift of exceptional dining with Foodi Gift Cards</Box>
 
                 </Box>

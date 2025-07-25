@@ -8,32 +8,35 @@ import StarIcon from '@mui/icons-material/Star';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 const Card_2 = () => {
   return (
-       
-    <Box height={"100vh"} >
+
+    <Box my={"40px"}>
       <Box sx={{
         fontWeight: "700",
-        fontSize: "20px",
+        fontSize: { xs: "12px", md: "20px" },
         lineHeight: "100%",
         letterSpacing: "3px",
         textTransform: "uppercase",
         fontStyle: "bold",
         color: "#FF6868",
-        my: "10px",
       }}>Special Dishes</Box>
 
-      <Box display={'flex'}>
+      <Box display={'flex'} justifyContent={"space-between"}>
 
         <Box sx={{
           fontWeight: "700",
-          fontSize: "60px",
+          fontSize: { xs: "30px", md: "60px" },
+
           lineHeight: "132%",
           letterSpacing: "0",
           fontStyle: "bold",
           color: "#000000",
-          width: "83%",
+          width: {
+            xs:"100%",
+            md:"40%",
+          },
           my: "10px",
 
-        }}>Standout Dishes <br /> From Our Menu</Box>
+        }}>Standout Dishes From Our Menu</Box>
 
         <Box sx={{
           display: "flex",
@@ -41,21 +44,21 @@ const Card_2 = () => {
           alignItems: "end",
 
         }}>
-
+  
           <Button sx={{
             backgroundColor: "#EFEFEF",
             color: "#6F6E6E",
             borderRadius: "60%",
-            height: "80px",
-            width: "80px",
-            marginRight: "50px"
+            width: { xs: "60px", md: "80px", },
+            height: { xs: "60px", md: "80px", },
+            mr:{ xs:"30px", md:"50px"},
           }}><ArrowBackIosIcon /></Button>
           <Button sx={{
             backgroundColor: "#39DB4A",
             color: "#FFFFFF",
             borderRadius: "60%",
-            height: "80px",
-            width: "80px",
+            width: { xs: "60px", md: "80px", },
+            height: { xs: "60px", md: "80px", },
           }} ><ArrowForwardIosIcon /></Button>
 
         </Box>
@@ -65,12 +68,19 @@ const Card_2 = () => {
       <Box sx={{
         display: "flex",
         justifyContent: 'space-between',
-        my:'25px'
+        alignItems: "center",
+        flexDirection: {
+          xs: "column",
+          md: "row",
+        },
+        gap: "20px",
+        my: '25px',
       }}>
 
         <Box sx={{
-          width: "446px",
-          height: "523px",
+
+          width: { xs: "350px", md: "446px", },
+          height: { xs: "420px", md: "523px", },
           borderRadius: "40px",
           backgroundColor: "#FFFFFF",
           boxShadow: "2px 9px 42px 0px #00000014",
@@ -106,8 +116,8 @@ const Card_2 = () => {
               src={Salad}
               alt="Logo"
               sx={{
-                width: "276px",
-                height: '276px',
+                width: { xs: "200px", md: "276px", },
+                height: { xs: "200px", md: "276px", },
               }} />
           </Box>
 
@@ -119,7 +129,7 @@ const Card_2 = () => {
           }}>
             <Box sx={{
               fontWeight: "600",
-              fontSize: "30px",
+              fontSize: { xs: "18px", md: "30px" },
               lineHeight: "100%",
               my: "10px",
 
@@ -129,7 +139,7 @@ const Card_2 = () => {
 
             <Box sx={{
               fontWeight: "600",
-              fontSize: "22px",
+              fontSize: { xs: "15px", md: "22px" },
               lineHeight: "100%",
               color: "#555555",
               my: "10px",
@@ -142,36 +152,33 @@ const Card_2 = () => {
             }}>
 
               <Box sx={{
-                fontSize: "30px",
+                fontSize: { xs: "18px", md: "30px" },
                 fontWeight: "600",
                 lineHeight: "100%",
                 color: "#000000"
               }}><span className='red'>$</span>24.00</Box>
 
-
-              <Box sx={{
-                fontSize: "24px",
-                fontWeight: "600",
-                lineHeight: "100%",
-                color: "#454545",
-                mr: "20px",
-              }}><StarIcon sx={{
-                width: "24px",
-                height: "24px",
-                color: "#FFE605",
-                mr: "2px"
-              }} />4.9</Box>
-
+              <Box sx={{ display: "flex", gap: "10px", mr: "20px" }}>
+                <StarIcon sx={{
+                  width: "24px",
+                  height: "24px",
+                  color: "#FFE605",
+                }} />
+                <Box sx={{
+                  fontSize: { xs: "16px", md: "24px" },
+                  fontWeight: "600",
+                  color: "#454545",
+                  mt: "3px",
+                }}>4.9</Box>
+              </Box>
             </Box>
-
-
           </Box>
 
         </Box>
 
         <Box sx={{
-          width: "446px",
-          height: "523px",
+          width: { xs: "350px", md: "446px", },
+          height: { xs: "420px", md: "523px" },
           borderRadius: "40px",
           backgroundColor: "#FFFFFF",
           boxShadow: "2px 9px 42px 0px #00000014",
@@ -207,8 +214,8 @@ const Card_2 = () => {
               src={Salad_2}
               alt="Logo"
               sx={{
-                width: "276px",
-                height: '276px',
+                width: { xs: "200px", md: "276px", },
+                height: { xs: "200px", md: "276px", },
               }} />
           </Box>
 
@@ -220,7 +227,7 @@ const Card_2 = () => {
           }}>
             <Box sx={{
               fontWeight: "600",
-              fontSize: "30px",
+              fontSize: { xs: "18px", md: "30px" },
               lineHeight: "100%",
               my: "10px",
 
@@ -230,7 +237,8 @@ const Card_2 = () => {
 
             <Box sx={{
               fontWeight: "600",
-              fontSize: "22px",
+
+              fontSize: { xs: "15px", md: "22px" },
               lineHeight: "100%",
               color: "#555555",
               my: "10px",
@@ -243,25 +251,28 @@ const Card_2 = () => {
             }}>
 
               <Box sx={{
-                fontSize: "30px",
+                fontSize: { xs: "18px", md: "30px" },
                 fontWeight: "600",
                 lineHeight: "100%",
                 color: "#000000"
               }}><span className='red'>$</span>26.00</Box>
 
 
-              <Box sx={{
-                fontSize: "24px",
-                fontWeight: "600",
-                lineHeight: "100%",
-                color: "#454545",
-                mr: "20px",
-              }}><StarIcon sx={{
-                width: "24px",
-                height: "24px",
-                color: "#FFE605",
-                mr: "2px"
-              }} />4.6</Box>
+
+              <Box sx={{ display: "flex", gap: "10px", mr: "20px" }}>
+                <StarIcon sx={{
+                  width: "24px",
+                  height: "24px",
+                  color: "#FFE605",
+                }} />
+                <Box sx={{
+                  fontSize: { xs: "16px", md: "24px" },
+                  fontWeight: "600",
+                  color: "#454545",
+                  mt: "3px",
+                }}>4.6</Box>
+
+              </Box>
 
             </Box>
 
@@ -271,8 +282,8 @@ const Card_2 = () => {
         </Box>
 
         <Box sx={{
-          width: "446px",
-          height: "523px",
+          width: { xs: "350px", md: "446px", },
+          height: { xs: "420px", md: "523px" },
           borderRadius: "40px",
           backgroundColor: "#FFFFFF",
           boxShadow: "2px 9px 42px 0px #00000014",
@@ -308,8 +319,8 @@ const Card_2 = () => {
               src={Egg_Salad}
               alt="Logo"
               sx={{
-                width: "276px",
-                height: '276px',
+                width: { xs: "200px", md: "276px", },
+                height: { xs: "200px", md: "276px", },
               }} />
           </Box>
 
@@ -321,7 +332,7 @@ const Card_2 = () => {
           }}>
             <Box sx={{
               fontWeight: "600",
-              fontSize: "30px",
+              fontSize: { xs: "18px", md: "30px" },
               lineHeight: "100%",
               my: "10px",
 
@@ -331,7 +342,7 @@ const Card_2 = () => {
 
             <Box sx={{
               fontWeight: "600",
-              fontSize: "22px",
+              fontSize: { xs: "15px", md: "22px" },
               lineHeight: "100%",
               color: "#555555",
               my: "10px",
@@ -344,25 +355,28 @@ const Card_2 = () => {
             }}>
 
               <Box sx={{
-                fontSize: "30px",
+                fontSize: { xs: "18px", md: "30px" },
                 fontWeight: "600",
                 lineHeight: "100%",
                 color: "#000000"
               }}><span className='red'>$</span>23.00</Box>
 
 
-              <Box sx={{
-                fontSize: "24px",
-                fontWeight: "600",
-                lineHeight: "100%",
-                color: "#454545",
-                mr: "20px",
-              }}><StarIcon sx={{
-                width: "24px",
-                height: "24px",
-                color: "#FFE605",
-                mr: "2px"
-              }} />4.5</Box>
+
+              <Box sx={{ display: "flex", gap: "10px", mr: "20px" }}>
+                <StarIcon sx={{
+                  width: "24px",
+                  height: "24px",
+                  color: "#FFE605",
+                }} />
+                <Box sx={{
+                  fontSize: { xs: "16px", md: "24px" },
+                  fontWeight: "600",
+                  color: "#454545",
+                  mt: "3px",
+                }}>4.5</Box>
+
+              </Box>
 
             </Box>
 

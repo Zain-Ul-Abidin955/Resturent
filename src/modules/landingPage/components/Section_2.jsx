@@ -7,14 +7,19 @@ import StarIcon from '@mui/icons-material/Star';
 const Section_2 = () => {
     return (
         <Box sx={{
-            // border: "2px solid red",
-            height:"100vh",
             display: "flex",
+            flexDirection: {
+                xs: 'column-reverse',
+                md: 'row',
+            },
             gap: "20px",
-            my: "15px",
+            my: "30px",
         }}>
             <Box sx={{
-                width: "50%",
+                width: {
+                    xs: "100%",
+                    md: "50%",
+                },
                 textAlign: "center",
 
             }}>
@@ -23,20 +28,31 @@ const Section_2 = () => {
                     src={Happy}
                     alt="Logo"
                     sx={{
-                        width: "506px",
-                        height: '744px',
+                        width: {
+                            xs: "80%",
+                            md: "506px"
+                        },
+                        height: {
+                            xs: "auto",
+                            md: '744px'
+                        },
+
                     }} />
             </Box>
 
             <Box sx={{
-                width: "635px",
+                width: {
+                    xs: "100%",
+                    md: "635px",
+                },
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-evenly",
+                gap: "20px",
             }}>
                 <Box sx={{
                     fontWeight: "700",
-                    fontSize: "20px",
+                    fontSize: { xs: "12px", md: "20px" },
                     lineHeight: "100%",
                     letterSpacing: "3px",
                     textTransform: "uppercase",
@@ -46,14 +62,14 @@ const Section_2 = () => {
 
                 <Box sx={{
                     fontWeight: "700",
-                    fontSize: "60px",
+                    fontSize: { xs: "30px", md: "60px" },
                     lineHeight: "131%",
                     color: "#000000",
                 }}>What Our Customers Say About Us</Box>
 
                 <Box sx={{
                     fontWeight: "500",
-                    fontSize: "26px",
+                    fontSize: { xs: "15px", md: "26px" },
                     lineHeight: "159%",
                     color: "#555555",
                 }}>“I had the pleasure of dining at Foodi last night, and I'm still raving about the experience! The attention to detail in presentation and service was impeccable”</Box>
@@ -63,24 +79,30 @@ const Section_2 = () => {
                     gap: "50px",
                     textAlign: "center",
                 }}>
+
                     <Box ml={3}>
                         <AvatarGroup spacing="small">
                             <Avatar alt="Remy Sharp" src={Girl_1} sx={{
-                                width: "80px",
-                                height: "80px",
+                                width: { xs: "60px", md: "80px", },
+                                height: { xs: "60px", md: "80px", },
                             }} />
                             <Avatar alt="Remy Sharp" src={boy_1} sx={{
-                                width: "80px",
-                                height: "80px",
+                                width: { xs: "60px", md: "80px", },
+                                height: { xs: "60px", md: "80px", },
                             }} />
                             <Avatar alt="Remy Sharp" src={Girl_2} sx={{
-                                width: "80px",
-                                height: "80px",
+                                width: { xs: "60px", md: "80px", },
+                                height: { xs: "60px", md: "80px", },
                             }} />
 
                         </AvatarGroup>
                     </Box>
-                    <Box mt={2}>
+                    <Box mt={2} sx={{
+                        display: {
+                            xs: "none",
+                            md: "block",
+                        },
+                    }}>
                         <Box sx={{
                             fontWeight: "600",
                             fontSize: "26px",
@@ -115,6 +137,8 @@ const Section_2 = () => {
                             }}>(18.6k Reviews)</Box>
                         </Box>
                     </Box>
+
+
                 </Box>
             </Box>
 

@@ -4,22 +4,38 @@ import PlayCircleRoundedIcon from '@mui/icons-material/PlayCircleRounded';
 import { GirlEating } from '../../../assets';
 const Section_1 = () => {
     return (
-        <Box  display={"flex"} my={2}>
-            <Box  width={"50%"} my={"auto"}>
-                <Box sx={{ fontWeight: "800", fontSize: "62px", color: "#000000", lineHeight: "146%" }}>Dive into Delights <br/>Of Delectable <span style={{ color: "#39DB4A" }}>Food</span></Box>
-                <Box sx={{ fontWeight: "500", fontSize: "26px", color: "#4A4A4A", lineHeight: "171%", marginTop: "25px" }}>
+
+
+        <Box sx={{
+            display: "flex",
+            my: "30px",
+            flexDirection: {
+                xs: 'column',
+                md: 'row',
+            },
+        }}>
+
+            <Box sx={{
+                m: "auto",
+                width: "100%"
+            }}>
+                <Box sx={{ fontWeight: "800", fontSize: { xs: "30px", md: "62px", }, color: "#000000", lineHeight: "146%" }}>
+                    Dive into Delights <br /> Of Delectable <span style={{ color: "#39DB4A" }}>Food</span>
+                </Box>
+
+                <Box sx={{ fontWeight: "500", fontSize: { xs: "15px", md: "26px" }, color: "#4A4A4A", lineHeight: "171%", marginTop: "25px" }}>
                     Where Each Plate Weaves a Story of Culinary Mastery and Passionate Craftsmanship
                 </Box>
 
-                <Box sx={{ display: "flex" , marginTop:"25px"}}>
+                <Box sx={{ display: "flex", marginTop: "25px" }}>
                     <Button variant="contained" sx={{
                         background: "#39DB4A",
                         borderRadius: "40px",
-                        width: "200px",
-                        height: "80px",
+                        width: { xs: "100px", md: "200px", },
+                        height: { xs: "40px", md: "80px", },
                         textTransform: "capitalize",
                         fontWeight: "600",
-                        fontSize: "26px",
+                        fontSize: { xs: "13px", md: "26px", },
                         color: "#FFFFFF",
                         lineHeight: "100%"
                     }}>Order Now</Button>
@@ -28,31 +44,41 @@ const Section_1 = () => {
                         <Button sx={{
 
                             borderRadius: "40px",
-                            width: "200px",
-                            height: "80px",
+                            width: { xs: "100px", md: "200px", },
+                            height: { xs: "40px", md: "80px", },
                             textTransform: "capitalize",
                             fontWeight: "600",
-                            fontSize: "26px",
+                            fontSize: { xs: "13px", md: "26px", },
+
                             color: "#4D4D4D",
                             lineHeight: "100%"
                         }}>Watch video</Button>
-                        <Box sx={{ background: "#FFFFFF", color: "#1E1E1E" }}><PlayCircleRoundedIcon color='#1E1E1E' sx={{ width: "80px", height: "80px" }} /></Box>
+                        <Box sx={{ background: "#FFFFFF", color: "#1E1E1E" }}><PlayCircleRoundedIcon color='#1E1E1E' sx={{
+                            width: { xs: "40px", md: "80px", },
+                            height: { xs: "40px", md: "80px", },
+                        }} /></Box>
                     </Box>
                 </Box>
             </Box>
-            
-                <Box
-                    component="img"
-                    src={GirlEating}
-                    alt="Logo"
-                    sx={{
-                        width: "830px",
-                        height: '810px',
-                    }}/>
 
+            <Box
+                component="img"
+                src={GirlEating}
+                alt="Logo"
+                sx={{
 
-            
+                    width: {
+                        xs: "100%",
+                        md: "825px"
+                    },
+                    height: {
+                        xs: "auto",
+                        md: '810px'
+                    },
+                }} />
         </Box>
+
+
     )
 }
 
